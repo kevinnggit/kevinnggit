@@ -12,3 +12,5 @@ Always curious, always learning — I enjoy turning ideas into working prototype
 ![kevinnggit's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit&commits_year=2025&show_icons=true&theme=radical)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=kevinnggit&repo=github-readme-stats)](https://github.com/kevinnggit/github-readme-stats)
+
+[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/kevinnggit/bbfce31e0217a3689c8d961a356cb10d/)
