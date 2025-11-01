@@ -11,4 +11,4 @@ Always curious, always learning — I enjoy turning ideas into working prototype
 
 [![kevinnggit's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit)](https://github.com/kevinnggit/github-readme-stats)
 
-![kevinnggit's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage)
+![kevinnggit's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit&show_icons=true)
