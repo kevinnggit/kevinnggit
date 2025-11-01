@@ -11,5 +11,5 @@ Always curious, always learning — I enjoy turning ideas into working prototype
 
 ![kevinnggit's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit&commits_year=2025&show_icons=true&theme=radical)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kevinnggit&langs_count=8)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kevinnggit&layout=donut)](https://github.com/kevinnggit/github-readme-stats)
 
