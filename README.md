@@ -9,4 +9,4 @@ In my daily work, I explore agile methodologies like **Kanban** and **Scrum** to
 
 Always curious, always learning — I enjoy turning ideas into working prototypes and bringing structure to innovation.
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit)](https://github.com/kevinnggit/github-readme-stats)
