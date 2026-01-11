@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo "<!DOCTYPE html><html lang='de'><head><meta charset='UTF-8'><title>Filter Nach Typ</title></head><body><h1>Wilkommen suchen sie sich aus nach welchen typen sie filtern wollen<h1/><form action='https://informatik.hs-bremerhaven.de/docker-step2023-team-06-web/cgi-bin/step-project/ship/filtertyp_table.sh'><input type='hidden' name='path' value='$1'><select name='ship_typ'><option value='1'>1</option><option value='3'>3</option><option value='5'>5</option><option value='18'>18</option><option value='24'>24</option></select><input type='submit' value='Absenden'></form></body></html>"

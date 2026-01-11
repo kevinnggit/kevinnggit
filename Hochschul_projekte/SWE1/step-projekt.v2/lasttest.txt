@@ -1,0 +1,12 @@
+\item 2024-01-29 15:26:45|1|219023842|0|Under way using engine|undefined|0|false|8.5617|53.5525|152.7|148|44|0|Not available|false|23656
+\item 2024-01-29 15:26:46|1|211253400|0|Under way using engine|nan|0|false|8.573|53.5455|0|511|43|0|Not
+available|false|49249
+\item 2024-01-29 15:26:47|3|211836960|0|Under way using engine|undefined|0.1|true|8.555|53.524|254|322|46|0|Not available|false|4064
+\item 2024-01-29 15:26:48|1|211595610|0|Under way using engine|nan|10.3|true|8.5668|53.531|218.2|511|48|0|Not available|true|23656
+\item 2024-01-29 15:26:48|3|374042000|5|Moored|undefined|0|false|8.5572|53.5763|228.7|243|49|0|Not available|false|86106
+\item 2024-01-29 15:26:49|1|211475930|0|Under way using engine|nan|0|true|8.5821|53.5374|84.2|511|49|0|Not available|true|34625
+\item 2024-01-29 15:26:50|1|211466070|0|Under way using engine|undefined|0|true|8.5665|53.5527|169.1|331|47|0|Not available|false|67421
+\item 2024-01-29 15:26:50|1|211540110|0|Under way using engine|undefined|0|false|8.5775|53.5365|320.6|230|51|0|Not available|false|2236
+\item 2024-01-29 15:26:50|3|211172020|5|Moored|undefined|0|true|8.577|53.5339|121.7|249|50|0|Not available|false|84122
+\item 2024-01-29 15:26:52|1|211290740|0|Under way using engine|undefined|0|false|8.5674|53.5459|0|334|53|0|Not available|false|100279
+\item 2024-01-29 15:26:53|5|211225940|9031208|DBMN|TIDE|55|Law Enforcement|8|23|6|1|1|00-00T24:60Z|undefined|0|0|24|60|2.3|BRV|0

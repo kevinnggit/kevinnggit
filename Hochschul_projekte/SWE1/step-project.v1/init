@@ -1,0 +1,4 @@
+#cat "/tmp/cur.log" >> "/home/docker-step2023-team-06/data/step-project/shipData.log"
+#sed -i 's///d' "/tmp/cur.log"
+cat "/tmp/curtest.log" >> "/home/docker-step2023-team-06/data/step-project/test.csv"
+sed 's/^.*//' "/tmp/curtest.log"

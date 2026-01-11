@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4e7;
+    color: #333;
+}
+header {
+    height: 90px;
+    width: 100%;
+    background-color: #1c1818;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav li:hover {
+    background-color: #424247;
+}
+.content {
+    margin-top: 90px;
+    padding: 20px;
+}
+.about-section {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.about-section h2 {
+    margin-top: 0;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.team-member {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 200px;
+}
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.team-member h3 {
+    margin: 10px 0 5px;
+}
+.team-member p {
+    margin: 0;
+}
+footer {
+    background: #50b3a2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

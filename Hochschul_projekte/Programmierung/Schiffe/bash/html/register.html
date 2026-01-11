@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Register</title>
+  <style>
+   body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+   }
+   .container{
+     padding: 20px;
+   }
+   .reg{
+     margin-bottom: 15px;
+   }
+   .reg label {
+     display: block;
+   }
+   .reg input {
+
+   }
+   .btn {
+     cursor: pointer;
+     border: none;
+   }
+   .btn:hover{
+     background-color: white;
+   }
+   .link {
+     display: block;
+     text-align: center;
+   }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registrierung</h1>
+      <form action="https://informatik.hs-bremerhaven.de/docker-tfw-2024-e-web/cgi-bin/cgi/register.sh"  method="post">
+        <div class="reg">
+          <label for="email">E-Mail</label>
+          <input type="email"  name="email">
+        </div>
+
+        <div class="reg">
+          <label for"password">Passwort</label>
+          <input type="password"  name="password">
+        </div>
+
+        <div class="reg">
+          <label for"confirmPass">Passwort bestätigen</label>
+          <input type"password"  name="confirmPass">
+        </div>
+        <button type="submit" class="btn">Registrieren</button>
+      </form>
+      <a class="link" href="index.html">Schon registriert? hier einloggen</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,609 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\usepackage{color} 
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\usepackage[ngerman]{babel}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\ihead{Projektname}
+\ohead{\today}
+\chead{Spezifikation der Softwarevoraussetzungen Version}
+\ifoot{Teamname}
+\ofoot{Seite \thepage}
+\cfoot{\textsuperscript{\textcopyright} Unternehmen 2024}
+
+\pagenumbering{arabic}
+\author{}
+\date{}
+
+\begin{document}
+
+\title{
+\begin{flushright}
+\textless Projektname\textgreater \\
+Spezifikation der Softwarevoraussetzungen\footnote{ 
+  \textsuperscript{} \emph{Dieses Template wird anstelle eines
+  Pflichtenheftes verwendet!} 
+  }\\
+für \textless System \textgreater \\
+Version \textless x.y\textgreater{}
+\end{flushright}
+}
+
+
+\maketitle
+
+\color{blue}
+{[}Anmerkung: Die folgende Vorlage\footnote{\textsuperscript{}
+  \emph{Angepasstes Template auf Basis der Templates für ``Software
+  Requirements Specification'' und ''Vision'' }
+
+  \emph{des IBM Rational Unified Process}} basiert auf einer Vorlage von
+IBM. Blau dargestellte Texte in eckigen Klammern sind
+Anleitungen zum Ausfüllen des Dokumentes und sollten vor der
+Veröffentlichung des Dokuments gelöscht werden.
+ 
+\color{black}
+
+\setcounter{secnumdepth}{0} % Keine Nummerierung der Section
+\section{Revisionsprotokoll}
+
+\setcounter{secnumdepth}{3} % Folgende Sections werden wieder nummiert
+
+\begin{longtable}[]{|l|l|l|l|}
+\hline
+\textbf{Änderungsdatum} & \textbf{Version } & \textbf{Beschreibung} &
+\textbf{Autor} \\
+\hline
+\textless tt/mm/jj\textgreater{} & \textless x.y\textgreater{} &
+\textless Details\textgreater{} & \textless Name\textgreater{} \\
+\hline
+& & & \\
+\hline
+& & & \\
+\hline
+& & & \\
+\hline
+\end{longtable}
+\clearpage
+
+\tableofcontents
+\newpage
+
+\section{Einführung}
+
+\color{blue}
+{[}Die Einführung zur \textbf{Spezifikation der Softwareanforderungen
+}gibt einen Überblick über die gesamte \textbf{Spezifikation}. Die
+Einführung gibt außerdem Verwendungszweck, Umfang, Definitionen,
+Akronyme, Abkürzungen und Referenzen der \textbf{Spezifikation der
+Softwareanforderungen }an.{]}
+
+
+{[}Anmerkung: Diese Spezifikation deckt sämtliche
+Softwareanforderungen für das System oder einen Teil des
+Systems ab.{]}
+
+
+{[}\textbf{Spezifikationen der Softwareanforderungen} können ganz
+unterschiedlich aufgebaut sein. Wenn Sie sich über die hier gegebenen
+Erläuterungen hinaus mit diesem Thema beschäftigen möchten und sich für
+weitere Optionen beim Aufbau von \textbf{Spezifikationen der
+Softwareanforderungen }interessieren, sollten Sie {[}IEEE830-1998{]}
+lesen.{]}
+
+\color{black}
+\subsection{Verwendungszweck}
+
+\color{blue}
+{[}Geben Sie den Verwendungszweck dieses Dokuments an.{]}
+
+\color{black}
+\subsection{Definitionen, Akronyme und Abkürzungen}
+\color{blue}
+{[}Dieser Unterabschnitt enthält eine Definition aller Begriffe,
+Akronyme und Abkürzungen, damit die \textbf{Spezifikation} ordnungsgemäß
+interpretiert werden kann.{]}(Glossar)
+
+\color{black}
+  \section{Allgemeine Beschreibung}
+	
+\color{blue}
+{[}In diesem Abschnitt sind die allgemeinen Faktoren beschrieben, die
+das Produkt und die geltenden Anforderungen beeinflussen. Dieser
+Abschnitt enthält keine spezifischen Anforderungen. Er gibt vielmehr
+Hintergrundinformationen zu den Anforderungen, die im Abschnitt 3
+detailliert aufgeführt sind, um sie besser verständlich zu machen.
+Nehmen Sie Punkte wie die folgenden auf:
+\color{black}
+
+\subsection{Geschäftschance}
+
+\color{blue}
+{[}Beschreiben Sie kurz die Geschäftschance, die dieses Projekt
+bietet.{]}
+\color{black}
+
+\subsection{Problembeschreibung}
+
+\color{blue}
+{[}Beschreiben Sie das Problem, das durch dieses Projekt gelöst werden
+soll. Sie können das folgende Format verwenden:{]}
+
+\color{black}
+\begin{longtable}[]{|p{\columnwidth * \real{0.5}}| p{\columnwidth * \real{0.5}}|} \hline
+ 
+Das Problem, 
+  &  
+\color{blue} {[}Problem beschreiben{]}
+  \\ \hline
+ 
+\color{black}betrifft
+  &  
+\color{blue}{[}die vom Problem betroffenen Stakeholder{]}
+  \\ \hline
+ 
+\color{black}Auswirkung des Problems:
+  &  
+\color{blue}{[}Was sind die Auswirkungen des Problems?{]}
+  \\ \hline
+ 
+\color{black}Eine erfolgreiche Lösung besteht darin,
+  &  
+\color{blue}{[}Einige wichtige Vorzüge einer erfolgreichen Lösung auflisten{]}
+  \\ \hline
+\end{longtable}
+
+\color{black}
+
+   \subsection{Produktpositionierung}
+	
+\color{blue}
+{[}Allgemeine Aussage, die auf der höchsten Ebene zusammenfassend
+beschreibt, welche einzigartige Position das Produkt am Markt einnehmen
+soll. Das folgende Format kann verwendet werden:{]}
+
+\color{black}
+\begin{longtable}[\textwidth]{| p{\columnwidth * \real{0.5}}| p{\columnwidth * \real{0.5}}|}\hline
+
+Für
+ & 
+\color{blue}{[}Zielgruppen{]},
+ \\ \hline
+\color{black} \vtop{\hbox{\strut erfüllt das Produkt /}\hbox{\strut ermöglicht das
+Produkt}}
+ & 
+\color{blue} {[}Aussage zum Bedarf bzw. zur Gelegenheit{]}
+ \\
+\color{black} Das vorliegende Produkt (Produktname)
+ & 
+\color{blue} ist ein(e) {[}Produktkategorie{]}
+ \\ \hline
+\color{black} und zeichnet sich dadurch aus, dass
+ & 
+\color{blue}{[}Aussage zum entscheidenden Vorteil des vorliegenden Produkts (zwingender Kaufgrund){]} \\ \hline
+\color{black} Im Gegensatz zu & 
+\color{blue}{[}primäre Konkurrenzprodukte{]} \\ \hline
+\color{black} hat das vorliegende Produkt folgende Eigenschaften
+ & 
+\color{blue}{[}Aussage zur grundlegenden Abgrenzung von Konkurrenzprodukten{]} \\ \hline
+\end{longtable}
+
+{[}Eine Produktpositionierung kommuniziert allen beteiligten
+Mitarbeitern den Zweck der Anwendung und die Bedeutung des Projekts.{]}
+
+\color{black}
+
+ \subsection{Benutzerübersicht}
+
+\color{blue}
+{[}Erstellen Sie eine zusammenfassende Liste aller identifizierten
+Benutzer.{]}
+\color{black}
+
+\begin{longtable}[]{|
+ p{\columnwidth * \real{0.33}}|
+ p{\columnwidth * \real{0.33}}|
+ p{\columnwidth * \real{0.33}}|}\hline
+
+& & \\ 
+
+\textbf{Name} & 
+\textbf{Beschreibung}
+  & 
+\textbf{Zuständigkeiten}
+ \\ \hline
+\color{blue}
+{[}Geben Sie den Benutzertyp an.{]}
+ & 
+\color{blue}{[}Beschreiben Sie kurz, welche Funktion die Benutzer im Hinblick auf
+das System haben.{]}
+ & 
+\color{blue}{[}Listen Sie die wichtigsten Zuständigkeiten des Benutzers im Hinblick
+auf das zu entwickelnde System auf. Beispiele:
+
+
+\begin{itemize}
+\item Der Benutzer erfasst Einzeldaten.
+\item Der Benutzer erstellt Berichte.
+\item Der Benutzer koordiniert die Arbeit.
+\item usw.{]}
+  
+\end{itemize} \\ \hline
+\end{longtable}
+
+\color{black}
+
+  \subsection[Benutzerumgebung]{Benutzerumgebung}
+
+\color{blue}
+{[}Geben Sie die Arbeitsumgebung des Zielbenutzers detailliert an.
+Einige Vorschläge zur Vorgehensweise:
+
+Wie viele Personen sind an der Ausführung der Aufgabe beteiligt? Ändert
+sich die Anzahl?
+
+Wie lang ist ein Aufgabenzyklus? Zeitraum pro Aktivität? Ändert sich
+das?
+
+Gibt es eindeutige Umweltbedingungen: mobil, draußen, an Bord?
+
+Welche Systemplattformen werden heute verwendet? Welche Plattformen
+sollen in Zukunft verwendet werden?
+
+Welche anderen Anwendungen werden verwendet? Muss Ihre Anwendung in
+diese Anwendungen integriert werden?
+
+Hier können Auszüge aus dem Geschäftsmodell aufgenommen werden, um die
+entsprechenden Aufgaben, Rollen usw. zu umreißen.{]}\\
+
+\color{black}
+
+    \subsection{Bedarf und Features}
+\color{blue}
+
+{[}Vermeiden Sie technische Details. Beschreiben Sie die Features nur
+allgemein. Konzentrieren Sie sich auf die erforderlichen Funktionen, und
+geben Sie an, warum (nicht wie) sie implementiert werden sollen.{]}
+
+\color{black}
+\begin{longtable}[]{| p{\columnwidth * \real{0.3333}}| p{\columnwidth * \real{0.3333}}| p{\columnwidth * \real{0.3333}}|} \hline
+
+\textbf{Bedarf}
+ & 
+\textbf{Priorität}
+ & 
+\textbf{Features}
+ \\ \hline
+ &  &  \\ \hline
+ &  &  \\ \hline
+ &  & \\ \hline
+ & &  \\ \hline
+ &  &  \\ \hline
+\end{longtable}
+
+
+\subsection{Produktperspektive}
+
+\color{blue}
+
+{[}Dieser Unterabschnitt der \textbf{Spezifikation der
+Softwareanforderungen} setzt das Produkt in Relation zu vergleichbaren
+anderen Produkten und zur Umgebung des Benutzers. Falls es sich um ein
+vollkommen unabhängiges Produkt handelt, geben Sie dies hier an. Sollte
+das Produkt eine Komponente eines größeren Systems sein, müssen Sie in
+diesem Unterabschnitt angeben, wie die Systeme interagieren und welche
+Schnittstellen es zwischen den Systemen gibt. Am leichtesten lassen sich
+die Hauptkomponenten eines größeren Systems sowie deren Wechselwirkungen
+und externe Schnittstellen in einem Diagramm (z.B. einem
+\textbf{UML-Paketdiagramm}) darstellen.{]}
+
+\color{black}
+
+    \subsection{Annahmen und Abhängigkeiten}
+\color{blue}
+{[}Dieser Abschnitt beschreibt alle wichtigen Annahmen zur technischen
+Durchführbarkeit, zur Verfügbarkeit von Subsystemen oder Komponenten
+sowie weitere projektbezogene Annahmen, von denen die Wirtschaftlichkeit
+der Software, die in dieser \textbf{Spezifikation der
+Softwareanforderungen} beschrieben ist, abhängen kann.{]}
+
+\color{black}
+
+  \section{Spezifische Anforderungen (Funktionale Anforderungen)}
+	
+\color{blue}	
+
+{[}In diesem Abschnitt der \textbf{Spezifikation der
+Softwareanforderungen} sind alle Softwareanforderungen so detailliert
+angegeben, dass Entwickler ein System entwerfen können, das diese
+Anforderungen erfüllt, und dass Tester überprüfen können, ob das System
+den genannten Anforderungen gerecht wird. Wenn Sie mit
+Anwendungsfallmodellen arbeiten, werden diese Anforderungen in
+Anwendungsfällen und den geltenden ergänzenden Spezifikationen erfasst.
+Das ist in SWE II der Fall.{]}
+
+\color{black}
+
+    \subsection{UML-Anwendungsfalldiagramm}
+		
+\color{blue}
+{[}Fügen Sie hier Ihr/e Anwendungsfalldiagramm/e ein. (Screenshot){]}\\
+\color{black}
+
+    \subsection{Anwendungsfall-Spezifikationen in Form von UML-Aktivitätsdiagrammen}
+		
+\color{blue}		
+{[}Wenn Anwendungsfallmodelle erstellt werden, definieren die
+Anwendungsfälle häufig die meisten funktionalen Anforderungen des
+Systems und einige nicht funktionale Anforderungen.\\
+Nehmen Sie in diesen Abschnitt die Anwendungsfall-Spezifikation zu jedem
+Anwendungsfall im obigen Anwendungsfalldiagramm oder zu ausgewählten
+Anwendungsfällen des Modells auf oder fügen Sie hier Verweise auf diese
+Spezifikationen ein. Stellen Sie sicher, dass jede Anforderung klar
+benannt ist.{]}\\
+(Fügen Sie in den Unterkapiteln die zum jeweiligen Anwendungsfall
+gehörigen Anwendungsfall-Spezifikation in Form von Aktivitätsdiagrammen
+mit Schwimmbahnen sowie Vor- und Nachbedingungen ein.)
+
+\color{black}
+
+      \subsubsection{UML-Aktivitätsdiagramm zu \textless Name des Anwendungsfalles a\textgreater{}}
+\emph{(Screenshot des zugehörigen Aktivitätsdiagrammes)}
+
+      \subsubsection{UML-Aktivitätsdiagramm zu \textless Name des Anwendungsfalles b\textgreater{}}
+
+.....
+  \section{Ergänzende Anforderungen (Nicht-funktionale Anforderungen)}
+\color{blue}
+
+{[}Anforderungen, die nicht in den Anwendungsfällen enthalten sind,
+werden in ergänzenden Spezifikationen dokumentiert. Die speziellen
+Anforderungen aus diesen Spezifikationen, die für dieses Subsystem oder
+Feature gelten, sollten hier eingefügt und so weit präzisiert werden,
+dass sie das Subsystem oder Feature detailliert beschreiben. Sie können
+an dieser Stelle aber auch auf die einzelnen ergänzenden Spezifikationen
+verweisen. Stellen Sie sicher, dass jede Anforderung klar benannt
+ist.{]}\\
+Wenn es zu einem Abschnitt keine relevanten Anforderungen gibt, löschen
+Sie diesen.
+
+\color{black}
+
+    \subsection{Benutzungsfreundlichkeit }
+
+\color{blue}
+{[}Dieser Abschnitt enthält alle Anforderungen mit Einfluss auf die
+Benutzungsfreundlichkeit. Beispiele:
+\begin{itemize}
+	\item   Geben Sie die Schulungszeit an, die erforderlich ist, bis normale und
+  professionelle Benutzer bestimmte Operationen produktiv ausführen
+  können.
+	\item   Geben Sie messbare Zeiten für typische Aufgaben an oder verwenden Sie
+  die Benutzerfreundlichkeit bekannter Systeme, die bei den Benutzern
+  beliebt sind, als Grundlage für die Benutzerfreundlichkeit des neuen
+  Systems.
+	\item 
+  Nennen Sie Anforderungen an die Konformität mit allgemeinen Standards
+  für die Benutzerfreundlichkeit an, z. B. mit den CUA-Standards der IBM
+  oder mit den GUI-Standards von Microsoft.{]}
+\end{itemize}
+
+
+\color{black}
+    \subsection{Zuverlässigkeit}
+		
+\color{blue}
+{[}Hier sollten Sie Anforderungen an die Zuverlässigkeit des Systems
+angeben. Vorschläge:
+
+\begin{itemize}
+\item
+  Verfügbarkeit ---Geben Sie die Verfügbarkeitszeit in Prozent an (xx,xx
+  \%), die Nutzungsdauer, den Wartungszugriff, den Betrieb im
+  eingeschränkten Modus und dergleichen mehr.
+\item
+  Mittlere Zeit zwischen auftretenden Fehlern --- Diese Zeit wird
+  normalerweise in Stunden angegeben, kann aber auch in Tagen, Monaten
+  oder Jahren angegeben werden.
+\item
+  Mittlere Reparaturzeit ---Wie lange kann das System bei einem Ausfall
+  außer Betrieb bleiben?
+\item
+  Genauigkeit---Geben Sie die für Systemausgaben erforderliche
+  Genauigkeit (Auflösung) und Präzision (nach bekanntem Standard) an.
+\item
+  Maximale Programmfehler- oder Mängelrate --- Diese Rate wird in der
+  Regel in Programmfehlern pro tausend Codezeilen oder in
+  Programmfehlern pro Funktionspunkt angegeben.
+\item
+  Programmfehler- oder Mängelquote --- Diese Quote wird als Anzahl
+  geringfügiger, signifikanter und kritischer Programmfehler angegeben.
+  Die Anforderungen müssen definieren, was unter einem ``kritischen''
+  Programmfehler zu verstehen ist (beispielsweise ein vollständiger
+  Datenverlust oder die Unmöglichkeit, bestimmte Funktionen des Systems
+  zu verwenden.{]}
+\end{itemize}
+\color{black}
+
+    \subsection{Leistung}
+		
+\color{blue}
+{[}Umreißen Sie in diesem Abschnitt die Leistungsmerkmale des Systems.
+Geben Sie spezifische Antwortzeiten an.
+
+\begin{itemize}
+  \item Antwortzeit für eine Transaktion (durchschnittlich, maximal)
+
+  \item Durchsatz (z. B. Transaktionen pro Sekunde)
+
+  \item Kapazität (z. B. mögliche Anzahl von Kunden oder Transaktionen)
+
+  \item Eingeschränkte Modi (Welcher Betriebsmodus ist akzeptabel, wenn das
+  System in irgendeiner Form eingeschränkt ist?)
+
+  \item Ressourcennutzung (Speicher, Datenträger, Kommunikation usw.){]}
+\end{itemize}
+
+\color{black}
+    \subsection{Servicefreundlichkeit}
+\color{blue}
+
+{[}Dieser Abschnitt enthält alle Anforderungen, die der Verbesserung der
+Servicefreundlichkeit oder Wartungsfreundlichkeit des zu erstellenden
+Systems dienen. Dazu gehören Codierungsstandards, Namenskonventionen,
+Klassenbibliotheken, Wartungszugriff und Wartungsdienstprogramme.{]}
+\color{black}
+
+    \subsection{Designeinschränkungen}
+\color{blue}
+
+{[}In diesem Abschnitt werden alle Designeinschränkungen des zu
+erstellenden Systems angegeben. Designeinschränkungen sind
+Designentscheidungen, die obligatorisch und zu respektieren sind.
+Beispiele sind Einschränkungen für Softwaresprachen, Anforderungen an
+Softwareprozesse, Vorschriften für die Verwendung von Entwicklungstools,
+Rahmenbedingungen für Architektur und Design, gekaufte Komponenten,
+Klassenbibliotheken usw.{]}
+
+\color{black}
+    \subsection{Anforderungen an die Onlinedokumentation für Benutzer und das Hilfesystem}
+\color{blue}
+
+{[}Beschreiben Sie hier die Anforderungen an die Onlinedokumentation für
+Benutzer, das Hilfesystem, Hilfe zu Anmerkungen usw.{]}
+\color{black}
+
+    \subsection{Gekaufte Komponenten}
+\color{blue}
+
+{[}Dieser Abschnitt beschreibt alle Komponenten, die für das System
+gekauft werden, alle geltenden Lizenzierungs- oder Nutzungsbedingungen
+sowie alle zugehörigen Kompatibilitäts- und Interoperabilitätsstandards
+oder Schnittstellenstandards.{]}
+\color{black}
+
+    \subsection{Schnittstellen}
+\color{blue}
+
+{[}Dieser Abschnitt definiert die Schnittstellen, die die Anwendung
+unterstützen muss. Er sollte mit angemessener Genauigkeit Protokolle,
+Ports und logische Adresse etc. angeben, so dass die Software auf der
+Basis der Schnittstellenanforderungen entwickelt und geprüft werden
+kann.{]}
+\color{black}
+
+      \subsubsection{Benutzerschnittstellen}
+\color{blue}
+
+{[}Beschreiben Sie die Benutzerschnittstellen, die von der Software
+implementiert werden müssen.{]}
+\color{black}
+
+      \subsubsection{Hardwareschnittstellen}
+\color{blue}
+{[}Dieser Abschnitt definiert alle Hardwareschnittstellen
+(einschließlich der logischen Struktur, der physischen Adressen, des
+erwarteten Verhaltens usw.), die die Software unterstützen muss.{]}
+\color{black}
+
+      \subsubsection{Softwareschnittstellen}
+\color{blue}
+{[}Dieser Abschnitt beschreibt Softwareschnittstellen zu anderen
+Komponenten des Softwaresystems. Es kann sich um gekaufte Komponenten
+handeln, um wiederverwendete Komponenten einer anderen Anwendung oder um
+Komponenten, die für ganz andere Subsysteme entwickelt wurden, mit denen
+diese Softwareanwendung jedoch interagieren muss.
+\color{black}
+
+      \subsubsection{Übertragungsschnittstellen}
+\color{blue}
+
+{[}Beschreiben Sie alle Übertragungsschnittstellen zu anderen Systemen
+oder Einheiten (z. B. lokale Netze, ferne serielle Einheiten etc.).{]}
+\color{black}
+
+    \subsection{Lizenzanforderungen}
+\color{blue}
+
+{[}Dieser Abschnitt definiert alle Anforderungen an die Lizenzierung
+oder an andere Nutzungsbeschränkungen für die Software.{]}
+\color{black}
+
+    \subsection{Rechtliche Hinweise, Copyright und Bemerkungen}
+\color{blue}
+
+{[}Dieser Abschnitt beschreibt den rechtlich zulässigen
+Haftungsausschluss, die erforderliche Gewährleistung,
+Copyright-Vermerke, bestehende Patente, geschützte Wörter, Marken oder
+Logos und Konformitätsaspekte der Software.{]}
+\color{black}
+
+    \subsection{Geltende Standards}
+
+\color{blue}
+{[}Dieser Abschnitt verweist auf alle geltenden Standards und gibt die
+spezifischen Abschnitte des jeweiligen Standards an, die auf das zu
+beschreibende System anwendbar sind. Dabei kann es sich um gesetzliche
+Vorschriften, Qualitätsnormen und Verwaltungsvorschriften,
+Industrienormen für Benutzerfreundlichkeit, Interoperabilität,
+Internationalisierung, Betriebssystemkonformität usw. handeln.{]}
+
+\color{black}
+\setcounter{secnumdepth}{0}
+\section[Anhang]{Anhang}
+
+\subsection[A Klassendiagramm]{A Klassendiagramm}
+
+\subsection[B ggf. UML-Sequenz- und Zustandsdiagramme]{B ggf. UML-Sequenz- und Zustandsdiagramme}
+
+\subsection[C Personas]{C Personas}
+
+\subsection[D Storyboard]{D Storyboard}
+
+\subsection[E Link auf den Online-Prototypen und Screenshots des Prototypen]{E Link auf den Online-Prototypen und Screenshots des Prototypen}
+
+\end{document}

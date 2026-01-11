@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="https://informatik.hs-bremerhaven.de/leaflet/leaflet.css"/>
+   <link rel="stylesheet" href="style1.css">
+<script type="text/javascript" src="https://informatik.hs-bremerhaven.de/leaflet/leaflet.js"></script>
+      <style>
+
+     html,body{
+     margin: 0px;
+     padding: 0px;
+     height:100%;
+     box-sizing: border-box;
+    }
+     body{
+       display: flex;
+       flex-direction: column;
+     }
+     header{
+       position: fixed;
+       top: 0;
+       width: 100%;
+     }
+      #mapid, html, body {
+      margin-top: 50px;
+      height: 80vh;
+     }
+      </style>
+    <title>KARTE</title>
+</head>
+<body>
+<header>
+        <div class="container">
+            <h1>Asia & Afrika Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="bestellungen.html">Bestellungen</a></li>
+                    <li><a href="position.html">Position</a></li>
+                    <li><a href="ueber.html">Über uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="mapid" style="height: 100%">
+    <script type="text/javascript" src="position.js"></script>
+    </div>
+    <script type="text/javascript" src="marker.js"></script>
+</body>
+</html>
