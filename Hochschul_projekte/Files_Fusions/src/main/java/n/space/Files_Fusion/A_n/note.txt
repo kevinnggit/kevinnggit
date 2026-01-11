@@ -1,0 +1,2 @@
+Prüfen ob die Datein lesbar sind |
+Die Scanner zusammenfassen
