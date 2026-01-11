@@ -44,7 +44,7 @@ In meinem [Hochschul_projekte](./Hochschul_projekte) Ordner findest du eine stru
 
 ## 📊 GitHub Stats
 
-![kevinnggit's GitHub stats](https://github-readme-stats.vercel.app/api?username=kevinnggit&commits_year=2025&show_icons=true&theme=radical)
+[![GitHub Streak](https://github-readme-streak-stats-tau-eight-87.vercel.app?user=kevinnggit&theme=transparent&hide_border=true)](https://git.io/streak-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kevinnggit&layout=donut&langs_count=7&show_icons=true&theme=radical)](https://github.com/kevinnggit/github-readme-stats)
 
