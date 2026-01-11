@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellungen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            width: 80%;
+            margin: auto;
+        }
+
+        header {
+            z-index: 10;
+            height: 90px;
+            width: 100%;
+            background-color: #1c1818;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        header li {
+            display: inline;
+            padding: 15px 25px;
+            margin-left: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        header li:hover {
+            background-color: #424247;
+        }
+
+        header .shopping {
+            position: relative;
+        }
+
+        header .shopping img {
+            width: 40px;
+        }
+
+        header .shopping span {
+            background: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            position: absolute;
+            top: -5px;
+            left: 100%;
+            padding: 3px 10px;
+        }
+
+        .list {
+            margin: 150px auto 20px;
+            overflow: hidden;
+        }
+
+        .list h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+
+        #orderlist {
+            background: #fff;
+            padding: 20px;
+            list-style: none;
+            border: #ccc 1px solid;
+            border-radius: 5px;
+        }
+
+        #orderlist li {
+            padding: 10px;
+            border-bottom: #ccc 1px dotted;
+            text-align: left;
+        }
+
+        #orderlist li:last-child {
+            border-bottom: none;
+        }
+
+        .ordern {
+            font-weight: bold;
+            color: #555;
+            display: inline-block;
+            width: 100px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Asia & Afrika Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                    <li><a href="bestellungen.html">Bestellungen</a></li>
+                    <li><a href="position.html">Position</a></li>
+                    <li><a href="ueber.html">Über uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="list">
+            <h2>Bestellungen</h2>
+            <ul id="orderlist">
+            <li>
+              <span class="ordern">40023</span><br>
+                ID: 1, Name: DAX pomade super light, Quantity: 2<br>
+                ID: 4, Name: Example Product 1, Quantity: 1<br>
+            </li>
+            <li>
+              <span class="ordern">40024</span><br>
+                ID: 2, Name: dimes sour apple, Quantity: 1<br>
+                ID: 5, Name: Example Product 2, Quantity: 2<br>
+                ID: 6, Name: Example Product 3, Quantity: 1<br>
+            </li>
+            <li>
+              <span class="ordern">40025</span><br>
+                ID: 3, Name: Fitne herbal tee, Quantity: 3<br>
+                ID: 7, Name: Example Product 4, Quantity: 2<br>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Afroshop. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

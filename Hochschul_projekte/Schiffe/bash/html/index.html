@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TFW-2024-team-e</title>
+  <link rel="stylesheet" href="https://informatik.hs-bremerhaven.de/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="https://informatik.hs-bremerhaven.de/leaflet/leaflet.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="accordion">
+    <div class="block">
+      <button class="opener" id="loginButton">Login</button>
+      <div class="panel" id="loginPanel">
+        <form id="loginForm">
+          <div class="form-control">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" required name="email" autocomplete>
+          </div>
+          <div class="form-control">
+            <label for="password">Passwort</label>
+            <input type="password" id="password" required name="pass">
+          </div>
+          <div class="form-control">
+          <button type="submit">Einloggen</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="block">
+      <button class="opener">Karte</button>
+      <div class="panel">
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="block">
+      <button class="opener" id="shipsOpener">Schiffe</button>
+      <div class="panel" style="align-items:center;flex-direction:column;">
+        <h1>Schiffspositionen</h1>
+        <table id="shipTable">
+          <thead>
+            <tr>
+              <th>Nummer</th>
+              <th>MMSI</th>
+              <th>Latitude</th>
+              <th>Longitude</th>
+              <th>Name</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="block">
+      <button class="opener">Monitor</button>
+      <div class="panel"><a class="links" href="monitor.html">monitor.html anzeigen</a></div>
+  </div>
+  <script src="js/positionen.js"></script>
+</body>
+</html>
+
