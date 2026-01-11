@@ -5,6 +5,9 @@
 *.swo
 *~
 .DS_Store
+.settings/
+.project
+.classpath
 
 # Compiled files
 *.class
@@ -16,6 +19,9 @@ __pycache__/
 *.o
 *.so
 *.exe
+target/
+build/
+dist/
 
 # LaTeX auxiliary files
 *.aux
@@ -37,3 +43,8 @@ __pycache__/
 # System files
 Thumbs.db
 desktop.ini
+
+# Maven
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
