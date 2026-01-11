@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afroshop</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="">
+
+    <div class="container">
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="img/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+    <header>
+        <div class="container">
+            <h1>Asia & Afrika Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="produkte.html">Produkte</a></li>
+                     <li><a href="bestellungen.html">Bestellungen</a></li>
+                    <li><a href="position.html">Position</a></li>
+                    <li><a href="ueber.html">Über uns</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="list">
+
+    </div>
+</div>
+<div class="card">
+    <h1>Card</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+        <div class="total">0</div>
+        <div class="closeShopping">Schließen</div>
+        <button id="orderButton">Bestellen</button>
+    </div>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Afroshop. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+     <script>
+    function zuBestellungen() {
+      window.location.href = 'bestellungen.html';
+    }
+
+    document.getElementById('orderButton').addEventListener('click',zuBestellungen);
+  </script>
+    <script src="script.js"></script>
+</body>
+</html>

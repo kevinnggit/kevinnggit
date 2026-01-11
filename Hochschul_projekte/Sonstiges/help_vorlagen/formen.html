@@ -1,0 +1,67 @@
+
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Eingabefelder</title>
+</head>
+
+<body>
+
+  <h1>Formulare</h1>
+
+  Radio-Button:</br>
+  <form id="formular1">
+    <input type="radio" id="option1" name="option" value="Option1">Option 1</br>
+    <input type="radio" id="option2" name="option" value="Option2">Option 2</br>
+    <input type="radio" id="option3" name="option" value="Option3">Option 3</br>
+    <input type="button" value="gewählte Option anzeigen" onclick="alert(option.value)">
+  </form></br>
+  Checkbox:</br>
+  <form id="formular2">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Rad">Rad</br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Bus">Bus</br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Schiff">Schiff</br>
+    <input type="button" value="true anzeigen, wenn Rad gewählt" onclick="alert(vehicle1.checked)">
+  </form>  </br>
+    Drop-Down:</br>
+  <form id="formular3">
+    Wählen Sie einen Filter:
+    <select id="filter" name="filter">
+      <option value="filter1">Filter 1</option>
+      <option value="filter2" selected>Filter 2</option>
+      <option value="filter3">Filter 3</option>
+      <option value="filter4">Filter 4</option>
+    </select><br>
+    <input type="button" value="gewählten Filter anzeigen" onclick="alert(filter.value)">
+  </form><br>
+  Weitere Eingabefelder:<br><br>
+  <form id="formular4" action="mailto:abc@def.de" method="POST" enctype="text/plain">
+      Passwortfeld: <input type="password" id="pwd" name="pwd"><br><br>
+      Datei hochladen: <input type="file" id="datei" name="datei"><br><br>
+      Farbe auswählen:</br>
+      <input type="color" onInput="farbe.value=value" name="color"></br>
+      gewählte Farbe:    <output id="farbe"></output><br></br>
+      </br>
+
+      <p><strong>Achtung:</strong> type="range" funktioniert nicht in Internet Explorer 9 und früheren Versionen.</p>
+      Jahreszahl zwischen 1800 und 2050 auswählen:</br>
+      <input type="range" min="1800" max="2050" value="1800" onInput="year.value=value" name="jahr">
+      <output id="year">1800</output><br>
+      </br>
+
+      <p><strong>Achtung:</strong> type="date" funktioniert nicht in Safari or Internet Explorer 11 und früheren Versionen.</p>
+      Wählen Sie ein Datum:<br> </br>
+      Datum :
+      <input id="meeting" type="date" name="datum" onInput="tag.value=value" /></br>
+      Hier erscheint gewähltes Datum direkt nach der Auswahl:
+      <output id="tag"></output><br>
+
+      <input type="submit">
+   </form><br>
+
+   (siehe auch <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">https://www.w3schools.com/html/html_form_input_types.asp)</a>
+</body>
+
+</html>

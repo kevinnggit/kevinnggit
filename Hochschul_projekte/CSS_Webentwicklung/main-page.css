@@ -1,0 +1,32 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, red, blue);
+}
+
+header {
+    background: transparent;
+    color: #fff;
+    height: 10vh;
+    font-size: 2em;
+    text-align: center;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+}
+
+iframe {
+    background: transparent;
+}
+
+iframe.shellPage {
+    flex: 1;
+    height: 100%;
+    border: none;
+}

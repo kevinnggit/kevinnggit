@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Edit Ticket</title>
+    <style>
+        body {
+            background: linear-gradient(to right, red, blue);
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            border: 2px solid white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        header {
+            background: transparent;
+            padding: 0.5em;
+            text-align: center;
+            font-size: 2em;
+        }
+        main {
+            background: transparent;
+        }
+        div {
+            background: transparent;
+            padding: 1em;
+            margin: 20px;
+            text-align: center;
+            border: 4px solid white;
+            border-radius: 20px;
+        }
+        div form {
+            padding: 10px;
+            background: transparent;
+        }
+        div form input {
+            background: transparent;
+            padding: 10px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        div form input:hover {
+            background: white;
+            color: black;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        form#formMove {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            background: transparent;
+        }
+        form#formMove select {
+            background: transparent;
+            padding: 10px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        form#formMove select:hover {
+            background: white;
+            color: black;
+            transition: 0.5s;
+        }
+        form#inputForm input {
+            margin: 5px;
+        }
+        form#ticketDelete input {
+            color: white;
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+        }
+        form#ticketDelete input:hover {
+            background-color: red;
+            color: white;
+            transition: 0.5s;
+        }
+        form#inputForm input#textField:hover {
+            cursor: text;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Hier können Sie das Ticket Bearbeiten</h1></header>
+    <main>
+        <!-- GenCode -->
+        <div id="curTicket">
+            <h2>$title</h2>
+            <p>$content</p>
+        </div>
+        <div>
+            <form id="inputForm" action='' method='get'>
+                <input type='hidden' name='ticketId' value=$ticketId>
+                <input type='text' name='title' id='textField' value=$title><br>
+                <input type='text' name='content' id='textField' value=$content> <br>
+                <input type='submit' value='Ticket bearbeiten'>
+            </form>
+        </div>
+        <div>
+            <form id="ticketDelete" action='' method='get'>
+                <input type='hidden' name='ticketId' value=$ticketId>
+                <input type='hidden' name='boardId' value=$boardId>
+                <input type='submit' value='Ticket löschen'>
+            </form>
+            <form id="formMove" action='' method='get'>
+                <input type='hidden' name='ticketId' value=$ticketId>
+                <select name="toMove" id="">
+                    <option value="todo">ToDo</option>
+                    <option value="inprogress">In Progress</option>
+                    <option value="intest">In Test</option>
+                    <option value="">Live</option>
+                </select>
+                <input type='submit' value='Ticket Verschieben'>
+            </form>
+        </div>
+        <!-- GenCode -->
+    </main>
+</body>
+</html>
