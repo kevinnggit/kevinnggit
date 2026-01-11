@@ -46,7 +46,7 @@ In meinem [Hochschul_projekte](./Hochschul_projekte) Ordner findest du eine stru
 
 [![GitHub Streak](https://github-readme-streak-stats-tau-eight-87.vercel.app?user=kevinnggit&theme=transparent&hide_border=true)](https://git.io/streak-stats)
 
-[![Top Langs](https://github-readme-streak-stats-tau-eight-87.vercel.app/api/top-langs/?username=kevinnggit&layout=donut&langs_count=7&show_icons=true&theme=radical)](https://github.com/kevinnggit/github-readme-stats)
+[![Top Langs](https://github-readme-streak-stats-tau-eight-87.vercel.app/api/top-langs/?username=kevinnggit&layout=donut&langs_count=7&show_icons=true&theme=radical)](https://github.com/kevinnggit/git.io/streak-stats)
 
 ## 🔗 Connect with Me
 
