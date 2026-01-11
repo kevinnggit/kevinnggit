@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo "<!DOCTYPE html><html lang='de'><head><meta charset='UTF-8'><title>Filter Date</title><h2>Geben Sie das gewünschte Datum ein:</h2></head><body><form action='https://informatik.hs-bremerhaven.de/docker-step2023-team-06-web/cgi-bin/step-project/ship/filterdate_table.sh'><input type='hidden' name='path' value='$1'><input type='date' id='filter_date' name='ship_date'><input type='submit' value='Absenden'></form></body></html>"

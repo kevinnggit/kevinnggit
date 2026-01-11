@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step_WIP</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-lock -->
+    <!-- https://www.w3schools.com/html/html_symbols.asp -->
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="https://informatik.hs-bremerhaven.de/docker-liajohanns-web/cgi-bin/swe1-project/login.sh" method="get">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <i class="fa fa-file"></i>
+                        <input type="email" required name="email">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" required name="pwd">
+                        <label for="">Passwort</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><a href="forgetpwd.html">Passwort vergessen?</a></label>
+                    </div>
+                    <button>Log In</button>
+                    <div class="register">
+                        <p>Kein Account? <a href="register.html">Registriere dich hier!</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

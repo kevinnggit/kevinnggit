@@ -1,0 +1,68 @@
+body{
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/8e/7d/e0/monument-de-la-reunification.jpg?w=1200&h=-1&s=1");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+     color: white;
+    background-attachment: fixed;
+    -webkit-text-fill-color: black;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    
+    
+      }
+
+      /* HEADER*/
+      .main-head{ 
+        background: aqua;
+        color: rgb(87, 205, 79)55, 136;
+        
+      
+
+      }
+      nav{
+        min-height: 10vh; 
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        padding: 2rem;
+        border-radius: 20px;
+        
+      }
+      nav ul{
+        display: flex;
+        flex: 1 1 40rem;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+      }
+      #logo{
+        flex: 2 1 40rem;
+        align-items: center;
+        
+        
+      }
+      .a{
+        color: white;
+        text-decoration: solid;
+      }
+      h1{
+        border: 2px solid black;
+        box-shadow: 5px 5px 2px grey;
+        border-radius: 5px;
+        background: -webkit-radial-gradient(center,ellipse,red, rgb(41, 39, 39));
+        transform: scale3d(1);
+        text-align: center     ;
+        
+      }
+      p{
+        text-align: center;
+        text-shadow: 2px 5px 2px gray;
+        
+      }
+      myclass{
+        background: -webkit-radial-gradient(center,circle,red, black);
+        text-decoration-color: blue;
+      }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='de'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Edit Ticket</title>
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+        }
+        main div {
+            width: 40%;
+        }
+        main div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        main div:nth-child(2) input {
+            margin: 10px 0;
+        }
+        main div:nth-child(2) textarea {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Hier können Sie das Ticket Bearbeiten</h1></header>
+    <main>
+        <!-- Auto Gen -->
+        <div>
+            <h2>$title</h2>
+            <p>$content</p>
+        </div>
+        <div>
+            <form action='' method='get'>
+                <input type='hidden' name='ticketId' value=$ticketId>
+                <input type='text' name='title' id='title' value=$title><br>
+                <input type='text' name='content' value=$content>
+<!--            <textarea name='content' id='content' value='$content' cols='30' rows='10'>$content</textarea>-->
+                <input type='submit' value='Ticket bearbeiten'>
+            </form>
+        </div>
+        <!-- Auto Gen -->
+    </main>
+</body>
+</html>

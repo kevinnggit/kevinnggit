@@ -1,0 +1,67 @@
+/* =========================================
+   Global Reset & Basis-Einstellungen
+   Entfernt Standard-Abstände und setzt die Schriftart.
+   ========================================= */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =========================================
+   Layout & Sektionen
+   Zentriert Inhalte vertikal und horizontal auf dem Bildschirm.
+   ========================================= */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, red, blue);
+    color: whitesmoke;
+}
+
+/* =========================================
+   Komponenten: Willkommens-Box
+   Transparenter Hintergrund mit weißem Rand.
+   ========================================= */
+.welcome {
+    border: solid 2px white;
+    border-radius: 20px;
+    background: transparent;
+    padding: 20px;
+    width: 50vw;
+    text-align: center;
+}
+
+/* =========================================
+   Typografie & Links
+   ========================================= */
+h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    background-color: whitesmoke;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Weicher Übergang für Hover */
+}
+
+a:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.1); /* Leichtes Vergrößern statt scale property direkt */
+    text-decoration: underline;
+}
+
