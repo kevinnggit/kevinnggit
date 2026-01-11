@@ -15,10 +15,11 @@ Always curious, always learning — I enjoy turning ideas into working prototype
 
 In meinem [Hochschul_projekte](./Hochschul_projekte) Ordner findest du eine strukturierte Sammlung meiner akademischen Arbeiten aus dem Informatikstudium. Die Projekte sind nach Modulen organisiert:
 
-- **SWE1 & SWE2** - Software Engineering Projekte mit Fokus auf Webentwicklung
-- **Programmierung** - Java-Projekte und objektorientierte Programmierung
-- **CSS & Webentwicklung** - Frontend-Entwicklung und Design
-- **TFW** - Theoretische Grundlagen der Webentwicklung
+- **01_Software_Engineering_1** - Grundlagen, Bash & Web Basics
+- **02_Software_Engineering_2** - Fortgeschrittene Entwicklung & Doku
+- **03_Programming_Java** - OOP, Java & Spielentwicklung
+- **04_Web_Development** - Frontend & Design
+- **05_Data_Science** - Statistik & Analyse
 
 Jedes Projekt ist vollständig dokumentiert und demonstriert praktische Anwendungen verschiedener Technologien.
 
