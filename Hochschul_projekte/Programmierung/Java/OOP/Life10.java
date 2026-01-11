@@ -1,4 +1,4 @@
-package Prog01;
+package srcb;
 public class Life10 {
 
     public static void main(String[] args) {
